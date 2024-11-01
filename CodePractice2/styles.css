@@ -1,0 +1,105 @@
+body{
+    font-family: monospace;
+    text-align: center;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+.MyName{
+    height: 14vh;
+    color: black;
+    /* border: 1vh solid white; */
+    border-bottom: 0vh;
+    padding: 0px;
+    font-size: 11vh;   
+}
+.names{
+    overflow: hidden;
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+}   
+@keyframes moveUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.MyName {
+    background-color: transparent;
+    animation: moveUp 0.5s ease-in-out infinite; /* Adjust duration and easing as needed */ /* Start invisible for the fade effect */
+}
+.scaled {
+    width: 60vw;
+    background-color: gray ;
+    transform: scale(1.5) translateY(0) !important;
+    z-index: 2; /* Apply the scaling here */
+}
+.names:hover .MyName {
+    animation-play-state: paused; /* Pause animation for all on parent hover */
+}
+.moreNames{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: 220px;
+    color: white;
+    transform: rotate(270deg);
+    z-index: -2;
+    border: 1px solid white;
+}
+.moreeNames{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: 220px;
+    color: white;
+    transform: rotate(270deg);
+    z-index: -2;
+    border: 1px solid white;
+}
+.outerr{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+}
+.ar1{
+    background-color: #d4d4d4;
+    border-left: 10px black solid;
+    color: gray;
+}
+.ar2{
+    background-color: #b3b3b3;
+    border-left: 10px black solid;
+    color: gray;
+}
+.ar3{
+    background-color: #8c8c8c;
+    border-left: 10px black solid;
+    color: gray;
+}
+.br1{
+    border-left: 10px black solid;
+    background-color: #595959;
+    color: gray;
+}
+.br2{
+    background-color: #262626;
+    border-left: 10px black solid;
+    color: gray;
+}
+.br3{
+    background-color: #000000;
+    border-left: 10px black solid;
+    color: gray;
+}
